@@ -1,12 +1,14 @@
 // 2020 Sticky Snout Studio (Jonas Molgaard)
 
 #include "AnimNode_UBIKSolver.h"
+#include "Kismet/KismetMathLibrary.h"
 #include "AnimationRuntime.h"
 #include "HeadMountedDisplayFunctionLibrary.h"
 #include "UBIKRuntime.h"
 #include "Animation/AnimInstanceProxy.h"
 #include "Interfaces/IPluginManager.h"
 #include "Misc/EngineVersionComparison.h"
+#include "Animation/AnimTrace.h"
 
 /** STATS FOR USE WITH PROFILER **/
 DECLARE_CYCLE_STAT(TEXT("UBIK_EvaluateThread"), STAT_UBIK_EvaluateThread, STATGROUP_Character);
