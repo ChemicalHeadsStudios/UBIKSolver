@@ -127,10 +127,10 @@ private:
     TArray<FBoneReference> AllBones;
 
     UPROPERTY(Transient)
-    USkeletalMeshComponent* SkeletalMeshComponent;
+    TObjectPtr<USkeletalMeshComponent> SkeletalMeshComponent = nullptr;
 
     UPROPERTY(Transient)
-    UWorld* World;
+    TObjectPtr<UWorld> World = nullptr;
 
     float CachedDeltaTime;
 private:
